@@ -1,5 +1,5 @@
-let Name = prompt("Enter your FirstName");
-let display = `Welcome ${Yasahswini}`;
+let Name = prompt("Enter your name");
+let display = `Welcome ${Name}`;
 alert(display);
 let a = 10;
 let b = 20;
