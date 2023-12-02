@@ -8,5 +8,5 @@ while ((guess != favMovie) && (guess != "quit")) {
 if (guess === favMovie) {
     console.log("Congrats!");
 } else {
-    console.log("Ypu quit the game");
+    console.log("You quit the game");
 }
