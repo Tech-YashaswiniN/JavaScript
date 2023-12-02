@@ -1,10 +1,10 @@
 let todo = [];
 
-let req = prompt("Please enter your request");
+let req = prompt("Please enter your request.");
 
 while (true) {
     if (req === "quit") {
-        console.log("Quiting the app");
+        console.log("Quiting the app.");
         break;
     }
     if (req === "list") {
@@ -15,17 +15,17 @@ while (true) {
         console.log("---------");
     }
     else if (req === "add") {
-        let task = prompt("Please enter the task  you want to add");
+        let task = prompt("Please enter the task  you want to add.");
         todo.push(task);
-        console.log("Task added");
+        console.log("Task added.");
     }
     else if (req === "delete") {
-        let idx = prompt("Please enter the task index");
+        let idx = prompt("Please enter the task index.");
         todo.splice(idx, 1);
-        console.log("Task deleted");
+        console.log("Task deleted.");
     }
     else {
-        console.log("Wrong request");
+        console.log("Wrong request.");
     }
-    req = prompt("Please enter your request ")
+    req = prompt("Please enter your request.")
 }
