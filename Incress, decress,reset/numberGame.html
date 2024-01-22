@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number_Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 10rem;
+            background-color: rgb(127, 157, 213);
+        }
+
+        div {
+            width: 350px;
+            height: 350px;
+            text-align: center;
+            background-color: cornflowerblue;
+            box-shadow: 0px 0px 20px black;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgba(130, 240, 19, 0.83);
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="num">0</h1><br><br>
+        <button type="button" id="dec">Decrease</button>
+        <button type="button" id="res">Reset</button>
+        <button type="button" id="inc">increase</button>
+    </div>
+
+    <script>
+        let count = 0;
+        document.getElementById("dec").onclick = function () {
+            count = count - 1;
+            document.getElementById("num").innerText = count;
+        }
+        document.getElementById("res").onclick = function () {
+            count = 0;
+            document.getElementById("num").innerText = count;
+        }
+        document.getElementById("inc").onclick = function () {
+            count = count + 1;
+            document.getElementById("num").innerText = count;
+        }
+    </script>
+</body>
+
+</html>
